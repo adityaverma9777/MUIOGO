@@ -16,6 +16,7 @@ from Routes.Case.CaseRoute import case_api
 from Routes.Case.SyncS3Route import syncs3_api
 from Routes.Case.ViewDataRoute import viewdata_api
 from Routes.DataFile.DataFileRoute import datafile_api
+from Routes.Bridge.BridgeRoute import bridge_api
 
 #RADI
 # -------------------------
@@ -63,6 +64,7 @@ app.register_blueprint(case_api)
 app.register_blueprint(viewdata_api)
 app.register_blueprint(datafile_api)
 app.register_blueprint(syncs3_api)
+app.register_blueprint(bridge_api)
 
 CORS(app)
 
